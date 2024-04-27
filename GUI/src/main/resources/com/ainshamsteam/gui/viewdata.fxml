@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ainshamsteam.gui.ViewDataController">
+   <children>
+      <TextField layoutX="36.0" layoutY="69.0" prefHeight="25.0" prefWidth="186.0" text="Display Title" />
+      <TextField layoutX="36.0" layoutY="136.0" prefHeight="25.0" prefWidth="194.0" text="Display First name" />
+      <TextField layoutX="36.0" layoutY="211.0" prefHeight="25.0" prefWidth="203.0" text="Dislplay last name " />
+      <TextField layoutX="337.0" layoutY="69.0" text="Display Salary " />
+      <TextField layoutX="337.0" layoutY="136.0" text="Display Current balance " />
+      <TextField layoutX="337.0" layoutY="211.0" text="Display Leave Balance" />
+      <TextField layoutX="36.0" layoutY="266.0" text="Days Requested" />
+      <TextField layoutX="337.0" layoutY="266.0" text="Behavior score" />
+      <TextField layoutX="36.0" layoutY="315.0" text="attendance score" />
+      <TextField layoutX="337.0" layoutY="321.0" text="appearance score" />
+      <TextField layoutX="36.0" layoutY="353.0" text="work score" />
+      <Button fx:id="dispaly" layoutX="49.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="203.0" text="Display data" onAction="#getData" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ainshamsteam.gui.LeaveRequestController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label fx:id="titleLabel" contentDisplay="CENTER" layoutX="233.0" layoutY="39.0" opacity="0.92" prefHeight="32.0" prefWidth="174.0" text="Leave Request" textFill="#0b1cda" wrapText="true" AnchorPane.bottomAnchor="329.0" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="39.0">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Button fx:id="displayBalanceButton" layoutX="20.0" layoutY="98.0" minWidth="270.0" mnemonicParsing="false" text="Display Leave Balance" AnchorPane.bottomAnchor="277.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="98.0" onAction="#displayBalance" />
+                <Button fx:id="requestLeaveButton" layoutX="20.0" layoutY="251.0" minWidth="270.0" mnemonicParsing="false" text="Request Leave" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="350.0" onAction="#RequestLeave" />
+                <TextField fx:id="leaveBalanceTextField" layoutX="333.0" layoutY="98.0" prefHeight="25.0" prefWidth="200.0" />
+                <TextArea fx:id="leaveRequestTextArea" layoutX="341.0" layoutY="245.0" prefHeight="25.0" prefWidth="200.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
