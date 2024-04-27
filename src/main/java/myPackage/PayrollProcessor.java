@@ -4,8 +4,16 @@ public class PayrollProcessor
 {
 	
 	private EmployeeManager employeeManager;
-	
-	 public double calculateTotalPayroll()
+
+	public static void calculateAfterTax(Employee employee)
+	{
+		double tax = 1.14;
+		double salaryAfterTax =  employee.getSalary() / tax;
+		employee.setCurrentBalance(salaryAfterTax);
+	}
+
+
+	public double calculateTotalPayroll()
 	    {
 	        double totalPayroll = 0;
 	        for (Employee employee : employeeManager.getEmployees()) {
@@ -14,12 +22,12 @@ public class PayrollProcessor
 	        return totalPayroll;
 	    }
 
-	    public void addBonus(Employee employee, double bonus)
+	    public static void addBonus(Employee employee, double bonus)
 	    {
 	    	employee.setCurrentBalance(employee.getCurrentBalance() + bonus);
 	    }
 	    
-	    public void processPayroll(Employee employee) {
+	    public static void processPayroll(Employee employee) {
 
 	    	double tax = 1.14;
 	        double salaryAfterTax =  employee.getSalary() / tax;
