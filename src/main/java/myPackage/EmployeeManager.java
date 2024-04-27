@@ -2,7 +2,7 @@ package myPackage;
 
 import java.util.ArrayList;
 
-class EmployeeManager {
+public class EmployeeManager {
 	
 	 private static ArrayList<Employee> employees;
 
@@ -14,14 +14,11 @@ class EmployeeManager {
 	        employees.add(employee);
 	    }
 
-	    public void removeEmployee(int id) {
-	        for (Employee e : employees) {
-	        	if (e.getId() == id)
-	        		employees.remove(e);
-	        }
-	    }
+		public static void removeEmployee(int id) {
+			employees.removeIf(e -> e.getId() == id);
+		}
 
-	    public Employee getEmployeeById(int id) {
+	    public static Employee getEmployeeById(int id) {
 	        for (Employee e : employees) {
 	            if (e.getId() == id) {
 	                return e;
@@ -30,7 +27,7 @@ class EmployeeManager {
 	        return null;
 	    }
 
-	    public int getEmployeeCount() {
+	    public static int getEmployeeCount() {
 	        return employees.size();
 	    }
 
@@ -43,7 +40,7 @@ class EmployeeManager {
 	        return false;
 	    }
 	    
-	    public ArrayList<Employee> getEmployees(){
+	    public static ArrayList<Employee> getEmployees(){
 	    	return EmployeeManager.employees;
 	    }
 

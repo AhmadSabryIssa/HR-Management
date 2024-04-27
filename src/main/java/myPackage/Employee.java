@@ -1,6 +1,6 @@
 package myPackage;
 
-class Employee
+public class Employee
 {
 
 

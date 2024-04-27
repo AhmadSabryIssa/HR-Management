@@ -24,7 +24,7 @@ class whiteboxTestPayrollProcessor {
             // Create sample employees with different salaries
             Employee emp1 = new Employee(1,"Abanoub","Samy",150000,"COO",5);
             Employee emp2 = new Employee(2,"Omar","Abdelal",140000,"Name Partner",6);
-            Employee emp3 = new Employee(1,"Ahmed","Sabry",160000,"HR Manager",4);
+            Employee emp3 = new Employee(3,"Ahmed","Sabry",160000,"HR Manager",4);
 
             // Add employees to the manager
             EmployeeManager.addEmployee(emp1);

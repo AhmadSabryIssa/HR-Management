@@ -3,7 +3,7 @@ package myPackage;
 public class PayrollProcessor
 {
 	
-	private EmployeeManager employeeManager;
+	private EmployeeManager employeeManager = new EmployeeManager();
 
 	public static void calculateAfterTax(Employee employee)
 	{
