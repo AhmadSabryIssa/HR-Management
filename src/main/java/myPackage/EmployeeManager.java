@@ -10,7 +10,7 @@ class EmployeeManager {
 	        EmployeeManager.employees = new ArrayList<>();
 	    }
 
-	    public void addEmployee(Employee employee) {
+	    public static void addEmployee(Employee employee) {
 	        employees.add(employee);
 	    }
 
